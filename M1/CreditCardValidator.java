@@ -1,3 +1,13 @@
+/**
+ * This program verifies if a credit card number is valid or not and displays back to the user
+ * 
+ * CreditCardValidator.V01.03
+ * Hailey Sneed
+ * SDEV200 
+ * 11/01/25
+ */
+
+
 import java.util.Scanner;
 
 public class CreditCardValidator {
