@@ -1,11 +1,25 @@
-public class Assignment4 {
+
+/**
+ * 
+ * M1A4
+ * This program outputs the peremiter of predeterimed parameters,
+ * with UML in separate file
+ * 
+ * Hailey Sneed
+ * SDEV200
+ * Exercise09-09.V01.002
+ * 11/01/25
+ */
+
+
+public class Exercise0909 {
     public static void main(String[] args) {
-        // Create three RegularPolygon objects
+
         RegularPolygon polygon1 = new RegularPolygon();
         RegularPolygon polygon2 = new RegularPolygon(6, 4);
         RegularPolygon polygon3 = new RegularPolygon(10, 4, 5.6, 7.8);
 
-        // Display perimeter and area with 2 decimal places
+
         System.out.printf("Polygon 1: Perimeter = %.2f, Area = %.2f%n",
                           polygon1.getPerimeter(), polygon1.getArea());
         System.out.printf("Polygon 2: Perimeter = %.2f, Area = %.2f%n",
@@ -22,17 +36,16 @@ class RegularPolygon {
     private double x;
     private double y;
 
-    // No-arg constructor
+
     public RegularPolygon() {
         this(3, 1, 0, 0);
     }
 
-    // Constructor with n and side
     public RegularPolygon(int n, double side) {
         this(n, side, 0, 0);
     }
 
-    // Constructor with n, side, x, y
+
     public RegularPolygon(int n, double side, double x, double y) {
         this.n = n;
         this.side = side;
@@ -40,7 +53,6 @@ class RegularPolygon {
         this.y = y;
     }
 
-    // Accessors and mutators
     public int getN() { return n; }
     public void setN(int n) { this.n = n; }
 
@@ -53,12 +65,12 @@ class RegularPolygon {
     public double getY() { return y; }
     public void setY(double y) { this.y = y; }
 
-    // Method to get perimeter
+ 
     public double getPerimeter() {
         return n * side;
     }
 
-    // Method to get area
+
     public double getArea() {
         return (n * side * side) / (4 * Math.tan(Math.PI / n));
     }
