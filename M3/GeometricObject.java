@@ -41,7 +41,7 @@ public abstract class GeometricObject {
                 " and filled: " + filled;
     }
 
-    /** Abstract methods */
+
     public abstract double getArea();
     public abstract double getPerimeter();
 }
